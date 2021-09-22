@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import Checkbox from './app/components/Checkbox'
+import React from "react"
+import Checkboxes from './app/components/Checkboxes'
+
+
+const data = ["name 1","name 2","name 3", ]
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Checkbox/>
+      <Checkboxes data={data} />
+
     </div>
   );
 }
 
-export default App;
